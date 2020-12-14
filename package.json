@@ -1,0 +1,26 @@
+{
+  "name": "8-kyus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HojaResolucionEjercicios.js",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO/issues"
+  },
+  "homepage": "https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO#readme"
+}
