@@ -1,6 +1,6 @@
 //creacion de un array sin usar el metodo clasico
 function arr(n) {
-    let newArr = [];
+	let newArr = [];
     let i = 0;
     while (i < n) {
         newArr.push(i);
@@ -16,12 +16,11 @@ function arr(n) {
 //exponentes
 function sumaExp(numbers = []) {
     var res = 0;
-
-    for (let i = 0; i < numbers.length; i++) {
-        res += Math.pow(numbers[i], 2);
+    
+    res += Math.pow(numbers[i], 2);
     //el += es para acumular la suma a la potencia de cada posicion
     //definir el array que se va a operar.
-    }
+    
     
     return res;
 }
@@ -63,20 +62,55 @@ const flip=(d, a)=>{
 
 ///////////////////////////////////////////////////////////
 
-
 //Digital root
 
 function digital_root(n) {
-    let i = 0, newArr = new Array();
-    let acum;
-
-    //parseo la variable y la separo con la funcion split
-    newArr[i] = n.toString().split('');
-    console.log(newArr[0]);
-
+    let arr = [n].toString().split(''), sum=0 ;
     
+    for (let i in arr) {
+        arr[i] = parseInt(arr[i]);
+    }
+
+    while(arr < 10){
+        sum= arr.reduce ((a,b) => a+b);
+    }
     
 }
 
-digital_root(16);
-///////////////////////////////////////////////////////////
+digital_root(456);
+
+
+/////////////////////////////////////////////////////////
+
+//Difference of Volumes of Cuboids
+        
+function findDifference(a, b) {
+    //creacion de acumuladores
+    let acumA = 0, acumB= 0, total = 0;
+
+    for (let i in a) {
+        acumA = a.reduce((a,b) => a*b);
+    }
+    
+    for (let j in b) {
+        acumB = b.reduce( (a,b) => a*b );
+    }
+    
+    
+    total = (acumA - acumB);
+   
+    if (total < 0) {
+        total = total * (-1);
+        return total;
+    }else{
+        return total;
+    }
+}
+
+findDifference([ 8, 23, 9 ], [ 19, 22, 5 ]);
+//SOLVE
+
+///////////////////////////////////////////////////
+
+
+
